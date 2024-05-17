@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecHUB - Subpágina</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilo del nav -->
+  <style>
+    /* Estilos del nav */
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding-top: 56px; /* Altura del navbar */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Para que esté por encima de otros elementos */
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            width: 100%;
+            height: 60px; /* Altura del pie de página */
+            line-height: 60px; /* Centrar verticalmente el texto */
+            background-color: #f8f9fa; /* Color de fondo del pie de página */
+            border-top: 1px solid #dee2e6; /* Línea superior */
+            text-align: center;
+            margin-top: auto; /* Empuja el pie de página al final de la página */
+        }
+
+        .center-title {
+            text-align: center;
+            margin-top: 40px; /* Espacio superior */
+            font-family: 'Poppins', sans-serif; /* Aplicar la fuente de Google */
+            font-size: 2.5rem; /* Tamaño de fuente */
+            color: #343a40; /* Color del texto */
+        }
+
+        .content {
+            margin: 40px;
+            text-align: justify;
+        }
+
+        .image-text-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            width: 310px; /* Ajustar el ancho de la imagen */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .image-text-container p {
+            flex: 1;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #343a40;
+        }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="TecHUB LOGO.png" alt="Logo TecHUB" height="50" class="mr-2">
+        TecHUB</a>
+      <!-- Botón para el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Enlaces del menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="queesperas.html">¿Que Esperas?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido de la subpágina -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-5">¿Que Puedes Esperar De Nuestra Empresa?</h2>
+    <!-- Imagen -->
+    <div class="text-center">
+      <img src="imagen 2.jpg" class="img-fluid mb-3" alt="Imagen">
+    </div>
+    <!-- Botón para abrir el modal -->
+    <div class="text-center">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#textoModal">
+        Aprieta Aqui
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="textoModal" tabindex="-1" aria-labelledby="textoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="textoModalLabel">¿Qué puedes esperar de nuestros servicios informáticos?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Texto -->
+          <p> En TecHUB, estamos comprometidos a brindarte soluciones informáticas integrales que potencien tu presencia en línea y protejan tus activos digitales. Con nuestros servicios de diseño web, creamos experiencias digitales personalizadas que reflejan la identidad y visión de tu empresa. Desde sitios web básicos hasta aplicaciones web complejas, nuestro equipo trabaja contigo para hacer realidad tus ideas y alcanzar tus objetivos en línea.
+            
+            Además, ofrecemos servicios de hosting y dominios confiables que garantizan que tu sitio web esté siempre disponible para tus clientes. Con servidores rápidos y un soporte técnico excepcional, puedes confiar en nosotros para mantener tu presencia en línea sin problemas y optimizada para un rendimiento óptimo.
+            
+            En cuanto a seguridad informática, en TecHUB nos especializamos en proteger tus sistemas y datos contra las amenazas cibernéticas. Realizamos evaluaciones exhaustivas de seguridad y implementamos medidas avanzadas de seguridad, como firewalls y sistemas de detección de intrusiones, para garantizar la integridad y confidencialidad de tus datos.
+            
+            En resumen, en TecHUB puedes esperar soluciones informáticas innovadoras, confiables y personalizadas que te ayuden a alcanzar tus metas tecnológicas y proteger tu presencia en línea de manera efectiva.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pie de Página -->
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">© 2024 TecHUB - Soluciones Informáticas</span>
+    </div>
+</footer>
+
+  <!-- Bootstrap JavaScript y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

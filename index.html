@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecHUB - Soluciones Informáticas</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilo del nav etc -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #343a40 !important;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    #hero-section {
+      background-image: url('TecHUB LOGO.png'); /* Ruta de la imagen de presentación */
+      background-size: cover;
+      background-position: center;
+      height: 400px; /* Altura ajustable */
+    }
+    #contacto {
+      padding: 50px 0;
+      background-color: #343a40;
+      color: #ffffff;
+    }
+    #contacto h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    #contacto p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    #map {
+      width: 100%; /* Ajuste de ancho */
+      height: 400px; /* Ajuste de altura */
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Altura del pie de página */
+        line-height: 60px; /* Centrar verticalmente el texto */
+        background-color: #f8f9fa; /* Color de fondo del pie de página */
+        border-top: 1px solid #dee2e6; /* Línea superior */
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .modal-dialog {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      height: 100%;
+    }
+    .modal-content {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="TecHUB LOGO.png" alt="Logo TecHUB" height="50" class="mr-2">
+        TecHUB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="queesperas.html">¿Que Esperas?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de Tarjetas -->
+  <section id="tarjetas" class="mt-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Explora nuestros servicios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="mujer programando.jpeg" class="card-img-top" alt="Imagen del Servicio 1">
+            <div class="card-body">
+              <h5 class="card-title">DesarrolloWeb</h5>
+              <p class="card-text">TecHUB ofrece soluciones de desarrollo web personalizadas para potenciar la presencia en línea de tu empresa. Desde sitios web básicos hasta aplicaciones web complejas, nuestro equipo crea experiencias digitales atractivas y funcionales, adaptadas a tus necesidades específicas. Confía en nosotros para llevar tu presencia en línea al siguiente nivel con creatividad, funcionalidad y atención al detalle.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imagen 4.jpg" class="card-img-top" alt="Imagen del Servicio 2">
+            <div class="card-body">
+              <h5 class="card-title">Hosting y Dominios</h5>
+              <p class="card-text">En TecHUB, ofrecemos servicios de hosting confiables y registro de dominios para asegurar la presencia en línea de tu empresa. Nuestros servidores rápidos y nuestro soporte técnico excepcional garantizan que tu sitio web esté siempre disponible para tus clientes. Con opciones de hosting flexibles y un registro de dominio sin complicaciones, TecHUB simplifica la gestión de tu presencia en línea para que puedas concentrarte en hacer crecer tu negocio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imagen5.jpg" class="card-img-top" alt="Imagen del Servicio 3">
+            <div class="card-body">
+              <h5 class="card-title">Seguridad Informatica</h5>
+              <p class="card-text">En TecHUB, nos especializamos en proteger tus sistemas y datos con las últimas tecnologías en seguridad informática. Desde evaluaciones exhaustivas de seguridad hasta implementaciones de firewall avanzadas, nuestro equipo de expertos se compromete a mantener tus activos digitales seguros frente a las amenazas cibernéticas. Con soluciones personalizadas y un enfoque proactivo, TecHUB garantiza la integridad y confidencialidad de tus datos, permitiéndote operar con tranquilidad en el entorno digital actual.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imagenModalLabel">Imagen Modal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="imagen 2.jpg" class="img-fluid" alt="Imagen Modal">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Para más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros:</p>
+      <p>Email: info@techub.com</p>
+      <p>Teléfono: +569 44357410</p>
+      <p>Ubicación De Nuestra Empresa</p>
+      
+      <!-- Mapa de Google Maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4364772909516!2d-70.60072122354585!3d-33.516035700875264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0677c7d2355%3A0xa7aef48469ddd461!2sDuoc%20UC%3A%20Sede%20Plaza%20Vespucio!5e0!3m2!1ses!2scl!4v1715837995084!5m2!1ses!2scl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Bootstrap JavaScript y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

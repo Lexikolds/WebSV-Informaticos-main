@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web - TecHUB</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding-top: 56px; /* Altura del navbar */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Para que esté por encima de otros elementos */
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            width: 100%;
+            height: 60px; /* Altura del pie de página */
+            line-height: 60px; /* Centrar verticalmente el texto */
+            background-color: #f8f9fa; /* Color de fondo del pie de página */
+            border-top: 1px solid #dee2e6; /* Línea superior */
+            text-align: center;
+            margin-top: auto; /* Empuja el pie de página al final de la página */
+        }
+
+        .center-title {
+            text-align: center;
+            margin-top: 40px; /* Espacio superior */
+            font-family: 'Poppins', sans-serif; /* Aplicar la fuente de Google */
+            font-size: 2.5rem; /* Tamaño de fuente */
+            color: #343a40; /* Color del texto */
+        }
+
+        .content {
+            margin: 40px;
+            text-align: justify;
+        }
+
+        .image-text-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            width: 310px; /* Ajustar el ancho de la imagen */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .image-text-container p {
+            flex: 1;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TecHUB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h2 class="center-title">Desarrollo Web</h2>
+        <div class="content">
+            <div class="image-text-container">
+                <img src="desarrolloweb imagen.jpg" alt="Descripción de la imagen">
+                <p>
+                    En <strong>TecHub</strong>, ofrecemos servicios integrales de desarrollo web para ayudar a tu negocio a destacar en el entorno digital. Nuestro equipo de desarrolladores expertos está comprometido con la creación de sitios web atractivos, funcionales y optimizados para todos los dispositivos.
+                </p>
+            </div>
+            <h3>¿Qué ofrecemos?</h3>
+            <ul>
+                <li><strong>Diseño Personalizado:</strong> Creamos diseños únicos que reflejan la identidad de tu marca y atraen a tu audiencia.</li>
+                <li><strong>Desarrollo Responsivo:</strong> Aseguramos que tu sitio web se vea y funcione perfectamente en cualquier dispositivo, ya sea una computadora, tableta o teléfono móvil.</li>
+                <li><strong>Optimización SEO:</strong> Implementamos prácticas de SEO para mejorar la visibilidad de tu sitio en los motores de búsqueda, atrayendo más tráfico y potenciando tu negocio.</li>
+                <li><strong>E-commerce:</strong> Desarrollamos tiendas en línea seguras y fáciles de usar, con todas las funcionalidades necesarias para gestionar tu negocio de manera eficiente.</li>
+                <li><strong>Mantenimiento y Soporte:</strong> Ofrecemos servicios continuos de mantenimiento y soporte para asegurar que tu sitio web esté siempre actualizado y funcionando sin problemas.</li>
+            </ul>
+            <h3>¿Por qué elegir TecHub?</h3>
+            <ul>
+                <li><strong>Experiencia y Profesionalismo:</strong> Contamos con un equipo de desarrolladores altamente capacitados y con amplia experiencia en el sector.</li>
+                <li><strong>Soluciones a Medida:</strong> Nos adaptamos a las necesidades específicas de cada cliente, ofreciendo soluciones personalizadas que aportan verdadero valor a tu negocio.</li>
+                <li><strong>Innovación Continua:</strong> Estamos al día con las últimas tecnologías y tendencias del mercado para ofrecerte siempre las mejores soluciones.</li>
+            </ul>
+            <p>
+                Confía en <strong>TecHub</strong> para transformar tu presencia digital y llevar tu negocio al siguiente nivel. ¡Contáctanos hoy mismo para más información y un presupuesto personalizado!
+            </p>
+        </div>
+    </div>
+
+      <!-- Pie de Página -->
+<footer class="footer">
+    <!-- Título centrado y botón de contacto -->
+    <div class="container">
+        <h2 class="center-title" style="font-size: 2.0rem;">¿Te interesa alguno de nuestros servicios? Contactanos!</h2>
+        <a href="contacto.html" class="btn btn-primary">Contactar</a>
+    </div>
+    <!-- Información de derechos de autor -->
+    <div class="container">
+        <span class="text-muted">© 2024 TecHUB - Soluciones Informáticas</span>
+    </div>
+</footer>
+
+
+
+    <!-- Bootstrap JavaScript y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
